@@ -702,19 +702,5 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:0.1});
 document.querySelectorAll('.scroll-fade,.scroll-zoom').forEach(el=>obs.observe(el));
 </script>
-<button onclick="document.getElementById('myAudio').play()" style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-<audio id="myAudio" style="display:none;">
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-  // Try to autoplay music when page loads
-  window.addEventListener('load', function() {
-    var audio = document.getElementById('myAudio');
-    audio.play().catch(function(error) {
-      console.log('Autoplay blocked by browser');
-    });
-  });
-</script>
 </body>
 </html>
